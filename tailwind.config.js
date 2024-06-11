@@ -16,6 +16,7 @@ module.exports = {
         'roboto-mono-condensed-condensed': ['Roboto Mono Condensed Condensed','monospace'],
         'teko-sans': ['Teko','sans-serif'],
         'merriweather-regular': ['Merriweather', 'serif'],
+        'kanit': ['Kanit', 'sans-serif'],
       }
     },
   },

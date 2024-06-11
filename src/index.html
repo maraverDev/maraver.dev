@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <title>Gonzalo Maraver 💻</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,44 +10,135 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link href="./output.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-zinc-800" > 
+  <body class="bg-zinc-800">
     <!-- Header -->
     <header class="py-12">
-      <div class="flex justify-between text-white mx-80">
+      <div class="flex justify-between text-white mx-80 max-xl:mx-10">
         <div class="flex">
           <a
             class="flex justify-center items-center font-bold hover:text-sky-500"
-            href=         >
+            href=""
+          >
             <img
               class="rounded-full"
               src="images/header/Gonzalo Maraver.png"
               width="56px"
             />
             <span class="font-poppins ml-3 text-lg">Gonzalo Maraver</span>
-          </a> 
+          </a>
         </div>
-        <div class="flex justify-between items-center font-bold font-poppins">
+        <div
+          class="flex justify-between items-center font-bold font-poppins max-md:hidden"
+        >
           <a class="mx-4 hover:text-sky-500" href="">Home</a>
           <a class="mx-4 hover:text-sky-500" href="">Sobre mí</a>
-          <a class="mx-4 hover:text-sky-500" href="">Proyectos</a>
+          <a class="mx-4 hover:text-sky-500" href="#work">Proyectos</a>
           <a class="mx-4 hover:text-sky-500" href="">Contacto</a>
         </div>
       </div>
-
     </header>
-    <main class="text-white py-12 flex flex-col content-center justify-center min-h-72">
+    <main class="text-white py-12 flex flex-col content-center min-h-72">
       <div class="mx-80">
-        <h3 class="text-sky-500  uppercase font-teko-sans text-3xl hover:text-sky-300">hola, soy maraverdev</h3>
-        <h1 class="text-7xl font-merriweather-regular mt-3 font-semibold">I'm a trainee.</h1>
-        <p class="text-4xl mt-10"> Soy Maraver, un desarrollador en formación, con actuales conocimientos en tecnologias como, HTML, CSS, PHP,
-          SQL. Actualmente estoy trabajando en varios proyectos para seguir aprendiendo lo máximo en este sector.
+        <a
+          class="text-sky-500 uppercase font-teko-sans text-3xl hover:text-sky-300"
+          href="#"
+          >hey, soy maraver.</a
+        >
+        <h1 class="group text-7xl font-merriweather-regular mt-3 font-semibold cursor-default w-[550px]">
+          I'm a trainee<span class="font-roboto ww text-white group-hover:text-sky-500"> /></span>
+        </h1>
+        <p class="text-3xl mt-10 font-light">
+          Soy Maraver, un desarrollador en formación, con actuales conocimientos
+          en tecnologias como, HTML, CSS, PHP, SQL... Actualmente estoy
+          trabajando en varios proyectos para seguir aprendiendo lo máximo del
+          sector del desarrollo.
         </p>
       </div>
     </main>
+    <section class="text-white flex flex-col content-center mt-12 mx-80">
+      <h4 class="font-merriweather-regular text-3xl" id="work">Proyectos personales</h4>
+      <div class="py-12 grid grid-cols-4 gap-8">
+        <div
+          class="group flex flex-col p-5 bg-black w-72 h-80 rounded-xl hover:scale-105 transition ease-in duration-200"
+        >
+          <!-- cardheader -->
+          <h2 class="text-2xl font-merriweather-regular mb-4">Project name</h2>
+          <h3
+            class="opacity-0 invisible text-base font-merriweather-regular transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
+            beatae natus neque quisquam facilis qui consectetur ut? Ipsam natus
+            libero dolorum sapiente, temporibus at dolores saepe maiores
+            recusandae eum ipsa.
+          </h3>
+        </div>
+        <div
+          class="group flex flex-col p-5 bg-black w-72 h-80 rounded-xl hover:scale-105 transition ease-in duration-200"
+        >
+          <!-- cardheader -->
+          <h2 class="text-2xl font-merriweather-regular mb-4">Project name</h2>
+          <h3
+            class="opacity-0 invisible text-base font-merriweather-regular transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
+            beatae natus neque quisquam facilis qui consectetur ut? Ipsam natus
+            libero dolorum sapiente, temporibus at dolores saepe maiores
+            recusandae eum ipsa.
+          </h3>
+        </div>
+        <div
+          class="group flex flex-col p-5 bg-black w-72 h-80 rounded-xl hover:scale-105 transition ease-in duration-200"
+        >
+          <!-- cardheader -->
+          <h2 class="text-2xl font-merriweather-regular mb-4">Project name</h2>
+          <h3
+            class="opacity-0 invisible text-base font-merriweather-regular transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
+            beatae natus neque quisquam facilis qui consectetur ut? Ipsam natus
+            libero dolorum sapiente, temporibus at dolores saepe maiores
+            recusandae eum ipsa.
+          </h3>
+        </div>
+        <div
+          class="group flex flex-col p-5 bg-black w-72 h-80 rounded-xl hover:scale-105 transition ease-in duration-200"
+        >
+          <!-- cardheader -->
+          <h2 class="text-2xl font-merriweather-regular mb-4">Project name</h2>
+          <h3
+            class="opacity-0 invisible text-base font-merriweather-regular transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
+            beatae natus neque quisquam facilis qui consectetur ut? Ipsam natus
+            libero dolorum sapiente, temporibus at dolores saepe maiores
+            recusandae eum ipsa.
+          </h3>
+        </div>
+      </div>
+      <div class="flex flex-row justify-end">
+        <a
+          href="#"
+          class="text-2xl font-kanit font-normal items-center flex pb-14 hover:text-sky-500"
+          ><span>Visita mi trabajo</span></a
+        >
+      </div>
+    </section>
+
+    <footer class="py-12 border-t-[1px] border-black">
+    </footer>
   </body>
 </html>
