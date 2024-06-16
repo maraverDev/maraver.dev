@@ -5,6 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script>
+              document.addEventListener('DOMContentLoaded', function() {
+            fetch('pages/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        });
+    </script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -30,33 +39,10 @@
   </head>
   <body class="bg-zinc-800">
     <!-- Header -->
-    <header class="py-12">
-      <div
-        class="flex flex-col justify-between mx-6 text-white sm:flex-row lg:mx-60"
-      >
-        <div class="flex justify-center mb-4 sm:justify-start sm:mb-0">
-          <a
-            class="flex items-center justify-center font-bold hover:text-sky-500"
-            href=""
-          >
-            <img
-              class="rounded-full"
-              src="images/header/Gonzalo Maraver.png"
-              width="56px"
-            />
-            <span class="ml-3 text-lg font-poppins">Gonzalo Maraver</span>
-          </a>
-        </div>
-        <div
-          class="flex items-center justify-center mb-4 font-bold sm:justify-end font-poppins sm:mb-0"
-        >
-          <a class="mx-2 lg:mx-4 hover:text-sky-500" href="">Home</a>
-          <a class="mx-2 lg:mx-4 hover:text-sky-500" href="">Sobre mí</a>
-          <a class="mx-2 lg:mx-4 hover:text-sky-500" href="#work">Proyectos</a>
-          <a class="mx-2 lg:mx-4 hover:text-sky-500" href="">Contacto</a>
-        </div>
-      </div>
-    </header>
+     <header id="header" class="py-12">
+      
+     </header>
+
 
     <main
       class="flex flex-col content-center py-12 mx-6 text-white min-h-72 lg:mx-60"
@@ -91,59 +77,26 @@
       <h4 class="text-3xl font-merriweather-regular" id="work">
         Proyectos personales
       </h4>
-      <div class="grid grid-cols-1 gap-8 py-12 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 2xl:grid-cols-4">
+      <div
+        class="grid grid-cols-1 gap-8 py-12 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 2xl:grid-cols-4"
+      >
+      <a href="">
         <div
           class="flex flex-col p-5 transition duration-200 ease-in bg-black group rounded-xl hover:scale-105"
         >
-          <h2 class="mb-4 text-2xl font-merriweather-regular">Project name</h2>
+          <h2 class="mb-4 text-2xl font-merriweather-regular">
+            Project name
+          </h2>
           <h3
             class="invisible text-base transition-opacity duration-500 opacity-0 font-merriweather-regular group-hover:opacity-100 group-hover:visible"
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
-            beatae natus neque quisquam facilis qui consectetur ut? Ipsam natus
-            libero dolorum sapiente, temporibus at dolores saepe maiores
-            recusandae eum ipsa.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Officiis, beatae natus neque quisquam facilis qui consectetur ut?
+            Ipsam natus libero dolorum sapiente, temporibus at dolores saepe
+            maiores recusandae eum ipsa.
           </h3>
         </div>
-        <div
-          class="flex flex-col p-5 transition duration-200 ease-in bg-black group rounded-xl hover:scale-105"
-        >
-          <h2 class="mb-4 text-2xl font-merriweather-regular">Project name</h2>
-          <h3
-            class="invisible text-base transition-opacity duration-500 opacity-0 font-merriweather-regular group-hover:opacity-100 group-hover:visible"
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
-            beatae natus neque quisquam facilis qui consectetur ut? Ipsam natus
-            libero dolorum sapiente, temporibus at dolores saepe maiores
-            recusandae eum ipsa.
-          </h3>
-        </div>
-        <div
-          class="flex flex-col p-5 transition duration-200 ease-in bg-black group rounded-xl hover:scale-105"
-        >
-          <h2 class="mb-4 text-2xl font-merriweather-regular">Project name</h2>
-          <h3
-            class="invisible text-base transition-opacity duration-500 opacity-0 font-merriweather-regular group-hover:opacity-100 group-hover:visible"
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
-            beatae natus neque quisquam facilis qui consectetur ut? Ipsam natus
-            libero dolorum sapiente, temporibus at dolores saepe maiores
-            recusandae eum ipsa.
-          </h3>
-        </div>
-        <div
-          class="flex flex-col p-5 transition duration-200 ease-in bg-black group rounded-xl hover:scale-105"
-        >
-          <h2 class="mb-4 text-2xl font-merriweather-regular">Project name</h2>
-          <h3
-            class="invisible text-base transition-opacity duration-500 opacity-0 font-merriweather-regular group-hover:opacity-100 group-hover:visible"
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis,
-            beatae natus neque quisquam facilis qui consectetur ut? Ipsam natus
-            libero dolorum sapiente, temporibus at dolores saepe maiores
-            recusandae eum ipsa.
-          </h3>
-        </div>
+      </a>
       </div>
       <div class="flex justify-end">
         <a
@@ -153,10 +106,11 @@
         >
       </div>
     </section>
-
-    <footer class="py-12 mx-6 text-white bg- lg:mx-60 bg-zinc-700">
+    <footer class="py-12 mx-6 text-white lg:mx-60">
       <div class="flex flex-col justify-between lg:flex-row">
-        <div class="grid grid-cols-2 gap-6 font-semibold sm:grid-cols-5 gap-y-2">
+        <div
+          class="grid grid-cols-2 gap-6 font-semibold sm:grid-cols-5 gap-y-2"
+        >
           <p>© 2024</p>
           <p>Trabajo</p>
           <p>Social</p>
@@ -168,7 +122,9 @@
           <a class="underline hover:no-underline" href="">My posts</a>
           <a class="underline hover:no-underline" href="">My posts</a>
         </div>
-        <div class="flex items-center justify-center mt-4 lg:justify-end lg:mt-0">
+        <div
+          class="flex items-center justify-center mt-4 lg:justify-end lg:mt-0"
+        >
           <a href="" class="mx-4"><i class="fa-brands fa-twitter fa-lg"></i></a>
           <a href="https://github.com/maraverDev" class="mx-4"
             ><i class="fa-brands fa-github fa-lg"></i
