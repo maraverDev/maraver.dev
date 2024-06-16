@@ -5,15 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <script>
-              document.addEventListener('DOMContentLoaded', function() {
-            fetch('pages/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
-        });
-    </script>
+    <script src="js/loadHeader.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -37,12 +29,9 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-zinc-800">
+  <body class="flex flex-col min-h-screen bg-zinc-800">
     <!-- Header -->
-     <header id="header" class="py-12">
-      
-     </header>
-
+    <header id="header" class="py-12"></header>
 
     <main
       class="flex flex-col content-center py-12 mx-6 text-white min-h-72 lg:mx-60"
@@ -80,23 +69,23 @@
       <div
         class="grid grid-cols-1 gap-8 py-12 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 2xl:grid-cols-4"
       >
-      <a href="">
-        <div
-          class="flex flex-col p-5 transition duration-200 ease-in bg-black group rounded-xl hover:scale-105"
-        >
-          <h2 class="mb-4 text-2xl font-merriweather-regular">
-            Project name
-          </h2>
-          <h3
-            class="invisible text-base transition-opacity duration-500 opacity-0 font-merriweather-regular group-hover:opacity-100 group-hover:visible"
+        <a href="">
+          <div
+            class="flex flex-col p-5 transition duration-200 ease-in bg-black group rounded-xl hover:scale-105"
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Officiis, beatae natus neque quisquam facilis qui consectetur ut?
-            Ipsam natus libero dolorum sapiente, temporibus at dolores saepe
-            maiores recusandae eum ipsa.
-          </h3>
-        </div>
-      </a>
+            <h2 class="mb-4 text-2xl font-merriweather-regular">
+              Project name
+            </h2>
+            <h3
+              class="invisible text-base transition-opacity duration-500 opacity-0 font-merriweather-regular group-hover:opacity-100 group-hover:visible"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Officiis, beatae natus neque quisquam facilis qui consectetur ut?
+              Ipsam natus libero dolorum sapiente, temporibus at dolores saepe
+              maiores recusandae eum ipsa.
+            </h3>
+          </div>
+        </a>
       </div>
       <div class="flex justify-end">
         <a
@@ -106,34 +95,6 @@
         >
       </div>
     </section>
-    <footer class="py-12 mx-6 text-white lg:mx-60">
-      <div class="flex flex-col justify-between lg:flex-row">
-        <div
-          class="grid grid-cols-2 gap-6 font-semibold sm:grid-cols-5 gap-y-2"
-        >
-          <p>© 2024</p>
-          <p>Trabajo</p>
-          <p>Social</p>
-          <p>Legal</p>
-          <p>Links</p>
-          <a class="underline hover:no-underline" href="">G.Maraver</a>
-          <a class="underline hover:no-underline" href="">LinkedIn</a>
-          <a class="underline hover:no-underline" href="">Privacy Policy</a>
-          <a class="underline hover:no-underline" href="">My posts</a>
-          <a class="underline hover:no-underline" href="">My posts</a>
-        </div>
-        <div
-          class="flex items-center justify-center mt-4 lg:justify-end lg:mt-0"
-        >
-          <a href="" class="mx-4"><i class="fa-brands fa-twitter fa-lg"></i></a>
-          <a href="https://github.com/maraverDev" class="mx-4"
-            ><i class="fa-brands fa-github fa-lg"></i
-          ></a>
-          <a href="https://gitlab.com/maraverdev" class="mx-4"
-            ><i class="fa-brands fa-gitlab fa-lg"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
+    <footer class="py-12 mx-6 text-white lg:mx-60" id="footer"></footer>
   </body>
 </html>
